@@ -1,0 +1,10 @@
+<div id='header_content'>
+  <%= render :partial => "/shared/menu",
+             :locals => {
+               :dom_id => 'menu',
+               :css => 'menu'
+             } -%>
+</div>
+<div id='header_title'>
+  <h1><%= RefinerySetting.get :site_name %></h1>
+</div>
