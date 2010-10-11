@@ -5,6 +5,9 @@
 */
 
 body {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  color:#484848;
 }
 
 #page {
@@ -28,6 +31,30 @@ h1 {
   padding:0;
 }
 
+h2 {
+  font-size: 20px;
+  padding: 2px 10px 1px 0px;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #bbbbbb;
+  color: #444;
+}
+
+h3 {
+  font-size: 16px;
+  padding: 2px 10px 1px 0px;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #bbbbbb;
+  color: #444;
+}
+
+h4 {
+  font-size: 13px;
+  padding: 2px 10px 1px 0px;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted #bbbbbb;
+  color: #444;
+}
+
 a:hover {
   color:#eee;
   text-decoration:underline;
@@ -40,8 +67,10 @@ a:hover {
 /* Menu nav */
 nav#menu {
   background: #2C4056;
-  font-size:0.8em;
-  padding:2px 2px 0 6px;
+  color: #fff;
+  height:1.8em;
+  font-size: 0.8em;
+  padding: 2px 2px 0px 6px;
 }
 
 nav#menu ul {
@@ -56,8 +85,9 @@ nav#menu li {
 }
 
 nav#menu a {
-  margin-right:8px;
-  font-weight:bold;
+  color: #ffffff;
+  margin-right: 8px;
+  font-weight: bold;
 }
 
 #header_title {
@@ -92,7 +122,13 @@ nav#menu a {
 
 #body_content_left {
   float:left;
-  width:600px;
+  width:70%;
+}
+
+#body_content_right {
+  float:left;
+  width:30%;
+  border:
 }
 
 /* Footer */
