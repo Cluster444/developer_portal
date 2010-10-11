@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/Cluster444/refinerycms-blog
+  revision: 52f741bbc4b96e1229246ca6f9b18862ed713090
+  specs:
+    refinerycms-blog (1.0.rc13)
+      filters_spam (~> 0.2)
+      refinerycms (>= 0.9.7.13)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -112,6 +120,7 @@ DEPENDENCIES
   mysql2
   rails (= 3.0.0)
   refinerycms (~> 0.9.8.5)
+  refinerycms-blog!
   refinerycms-i18n (~> 0.9.8.7)
   refinerycms-inquiries (~> 0.9.8.8)
   rmagick (~> 2.12.0)
