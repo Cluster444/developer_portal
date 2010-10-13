@@ -68,7 +68,6 @@ a:hover {
 nav#menu {
   background: #2C4056;
   color: #fff;
-  height:1.8em;
   font-size: 0.8em;
   padding: 2px 2px 0px 6px;
 }
@@ -86,8 +85,13 @@ nav#menu li {
 
 nav#menu a {
   color: #ffffff;
-  margin-right: 8px;
+  display:block;
   font-weight: bold;
+  padding:.8em;
+}
+
+nav#menu li.selected a {
+  background: #507aaa;
 }
 
 #header_title {
