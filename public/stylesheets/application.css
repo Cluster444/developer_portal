@@ -13,6 +13,8 @@ body {
 #page {
   padding:0px;
   width:100%;
+  min-width: 480px;
+  
 }
 
 a, a:visited {
@@ -88,6 +90,7 @@ nav#menu a {
   display:block;
   font-weight: bold;
   padding:.8em;
+  text-shadow: #333 0px 1px 0px;
 }
 
 nav#menu li.selected a {
@@ -95,12 +98,14 @@ nav#menu li.selected a {
 }
 
 #header_title {
-  background-color: #507AAA;
+  background: #507AAA;
+  background: -webkit-gradient(linear, 12% 20%, 12% 90%, from(#507AAA), to(#444EAE));  
+  background:-moz-linear-gradient(1% 0% 270deg, #507AAA, #444EAE 100%);
   color:#f8f8f8;
   height:5.3em;
   margin:0;
   padding:4px 8px 0 6px;
-  font-size:12px;
+  text-shadow: #333 0px 1px 0px;
   position:relative;
 }
 
