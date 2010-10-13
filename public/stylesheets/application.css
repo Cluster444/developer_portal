@@ -106,14 +106,13 @@ nav#menu li.selected a {
 
 /* Body */
 
-#body {
-}
-
 #body_content {
   background-color:#fff;
   padding:6px 10px 10px;
   z-index:10;
   min-height:600px;
+  text-align:justify;
+  line-height:1.5em;
 }
 
 #body_content_page_title {
@@ -131,8 +130,8 @@ nav#menu li.selected a {
 
 #body_content_right {
   float:left;
-  width:30%;
-  border:
+  padding: 0px 0.5%;
+  width: 29%;
 }
 
 /* Footer */
