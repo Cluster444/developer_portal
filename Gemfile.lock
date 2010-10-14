@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/Cluster444/refinerycms-blog
-  revision: 52f741bbc4b96e1229246ca6f9b18862ed713090
+  revision: c6a90585dff1a9ab10b84351c66785d00df9fc15
   specs:
     refinerycms-blog (1.0.rc13)
       filters_spam (~> 0.2)
@@ -63,6 +63,7 @@ GEM
     moretea-awesome_nested_set (1.4.3.1)
       activerecord (~> 3.0.0)
     mysql2 (0.2.4)
+    nokogiri (1.4.3.1)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-cache (0.5.3)
@@ -118,6 +119,7 @@ PLATFORMS
 DEPENDENCIES
   aws-s3
   mysql2
+  nokogiri
   rails (= 3.0.0)
   refinerycms (~> 0.9.8.5)
   refinerycms-blog!
