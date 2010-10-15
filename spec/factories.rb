@@ -5,9 +5,15 @@ end
 
 Factory.define :syndication do |f|
   f.title 'Test Syndication'
-  f.description '...'
   f.url 'http://somedomain.com/feed.rss'
-  f.content_type 'Unknown'
-  f.protocol 'RSS 2.0'
-  f.category_id '1'
+  f.content_type 'Blog'
+  f.protocol 'RSS-2.0'
+end
+
+Factory.sequence :title do |n|
+  "Test-#{n}"
+end
+
+Factory.sequence :url do |n|
+  "http://test.com/feed#{n}.rss"
 end

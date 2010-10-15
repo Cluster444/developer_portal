@@ -6,7 +6,6 @@ class CreateSyndications < ActiveRecord::Migration
       t.string :url
       t.string :protocol
       t.string :content_type
-      t.integer :category_id
       t.boolean :spam, :default => false
       t.string :state, :default => nil
 

@@ -180,7 +180,6 @@ ActiveRecord::Schema.define(:version => 20101015040522) do
     t.string   "url"
     t.string   "protocol"
     t.string   "content_type"
-    t.integer  "category_id"
     t.boolean  "spam",         :default => false
     t.string   "state"
     t.datetime "created_at"

@@ -1,3 +1,15 @@
+# == Schema Information
+# Schema version: 20101015040522
+#
+# Table name: syndication_categories
+#
+#  id         :integer(4)      not null, primary key
+#  title      :string(255)
+#  parent_id  :integer(4)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 class SyndicationCategory < ActiveRecord::Base
   attr_accessible :title
 

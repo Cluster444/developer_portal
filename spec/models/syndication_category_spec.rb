@@ -1,5 +1,11 @@
 require 'spec_helper'
 
 describe SyndicationCategory do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before :each do
+    @attr = {:title => 'a'}
+  end
+
+  it 'should create an entry with valid attributes' do
+    SyndicationCategory.create! @attr
+  end
 end
