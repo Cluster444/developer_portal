@@ -6,6 +6,12 @@ GIT
       filters_spam (~> 0.2)
       refinerycms (>= 0.9.7.13)
 
+GIT
+  remote: git://github.com/parndt/acts_as_tree.git
+  revision: a696907c1e079a1a7b7090d116a5e901f72f2a29
+  specs:
+    parndt-acts_as_tree (1.2.5)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -146,6 +152,7 @@ DEPENDENCIES
   faker (= 0.3.1)
   mysql2
   nokogiri
+  parndt-acts_as_tree!
   rails (= 3.0.0)
   refinerycms (~> 0.9.8.5)
   refinerycms-blog!

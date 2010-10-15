@@ -10,6 +10,8 @@ gem 'nokogiri'
 
 gem 'aws-s3', :require => 'aws/s3'
 
+gem 'parndt-acts_as_tree', :git => 'git://github.com/parndt/acts_as_tree.git', :require => 'acts_as_tree'
+
 # Development / Testing =======================================================
 
 group :test, :development do

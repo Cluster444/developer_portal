@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101011100057) do
+ActiveRecord::Schema.define(:version => 20101015040522) do
 
   create_table "blog_categories", :force => true do |t|
     t.string   "title"
@@ -166,6 +166,33 @@ ActiveRecord::Schema.define(:version => 20101011100057) do
 
   add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_and_sluggable_type_and_scope_and_sequence", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "syndication_categories", :force => true do |t|
+    t.string   "title"
+    t.integer  "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "syndications", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "url"
+    t.string   "protocol"
+    t.string   "content_type"
+    t.integer  "category_id"
+    t.boolean  "spam",         :default => false
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "syndications", ["id"], :name => "index_syndications_on_id"
+
+  create_table "syndications_syndication_categories", :id => false, :force => true do |t|
+    t.integer "syndication_id"
+    t.integer "syndication_category_id"
+  end
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"
